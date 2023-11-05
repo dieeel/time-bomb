@@ -55,5 +55,11 @@ your devDependencies to work around this error. This will make this message
 go away.
 ```
 
+## 2023/11/5 コンポーネント作成（プレイヤー）
+
+プレイヤーのコンポーネントを作成  
+[reactの流儀](https://ja.react.dev/learn/thinking-in-react)に従い、作成
+
+
 
 
