@@ -61,5 +61,18 @@ go away.
 [reactの流儀](https://ja.react.dev/learn/thinking-in-react)に従い、作成
 
 
+## 2023/11/9 chakra css framework
+
+* [公式](https://chakra-ui.com/)
+
+```
+cd time-bomb/time-bomb
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+
+Cardコンポーネントを作ったが、playerコンポーネントとして、スカとかをcardコンポーネントにした方が良いと思われる
+
+
+
 
 
