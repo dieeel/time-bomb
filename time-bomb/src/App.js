@@ -1,15 +1,31 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import Player from './component/Player';
+import PlayerList from './component/Player';
 
-const PLAYER = {
-  name: 'のび太',
-  cards: ['スカ', '解除', 'ボム', '不明']
-}
+const PLAYERS = [
+  {
+    name: 'のび太',
+    role: 'police',
+    hasScissor: true,
+    cards: ['スカ', '解除', 'ボム', '不明']
+  },
+  {
+    name: 'ジャイアン',
+    role: 'police',
+    hasScissor: false,
+    cards: ['スカ', '不明', '不明', '不明']
+  },
+  {
+    name: 'しずかちゃん',
+    role: 'bomber',
+    hasScissor: false,
+    cards: ['スカ', '不明', '不明', '不明']
+  },
+]
 
 export default function App() {
   return (
     <ChakraProvider>
-      <Player player={PLAYER}/>
+      <PlayerList players={PLAYERS} />
     </ChakraProvider>
   )
 }
