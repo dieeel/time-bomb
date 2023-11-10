@@ -63,7 +63,7 @@ go away.
 
 ## 2023/11/9 chakra css framework
 
-* [公式](https://chakra-ui.com/)
+* [Chakra公式](https://chakra-ui.com/)
 
 ```
 cd time-bomb/time-bomb
@@ -71,6 +71,36 @@ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
 
 Cardコンポーネントを作ったが、playerコンポーネントとして、スカとかをcardコンポーネントにした方が良いと思われる
+
+
+## 2023/11/10 chakra icon framework
+
+[react bootstrap icon](https://react-icons.github.io/react-icons/icons?name=bs)
+[グリッドのサイズ](https://getbootstrap.jp/docs/5.3/layout/grid/)
+
+```
+npm i @chakra-ui/icons
+```
+
+### エラーログがうざい
+
+```
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+```
+
+```
+npm install "@babel/plugin-proposal-private-property-in-object"
+```
 
 
 

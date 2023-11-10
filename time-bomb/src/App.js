@@ -1,16 +1,15 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import UserTable from './UserTable';
-import MyCard from './Card';
+import Player from './component/Player';
 
 const PLAYER = {
-  name: 'のび太'
+  name: 'のび太',
+  cards: ['スカ', '解除', 'ボム', '不明']
 }
 
 export default function App() {
   return (
     <ChakraProvider>
-      <UserTable />
-      <MyCard player={PLAYER}/>
+      <Player player={PLAYER}/>
     </ChakraProvider>
   )
 }
