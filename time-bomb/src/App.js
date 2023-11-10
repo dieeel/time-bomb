@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
+import PlayerList from './component/Player';
 
-function App() {
+const PLAYERS = [
+  {
+    name: 'のび太',
+    role: 'police',
+    hasScissor: true,
+    cards: ['スカ', '解除', 'ボム', '不明']
+  },
+  {
+    name: 'ジャイアン',
+    role: 'police',
+    hasScissor: false,
+    cards: ['スカ', '不明', '不明', '不明']
+  },
+  {
+    name: 'しずかちゃん',
+    role: 'bomber',
+    hasScissor: false,
+    cards: ['スカ', '不明', '不明', '不明']
+  },
+]
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ChakraProvider>
+      <PlayerList players={PLAYERS} />
+    </ChakraProvider>
+  )
 }
-
-export default App;
